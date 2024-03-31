@@ -1,0 +1,85 @@
+/* Minimal Post template */
+.template-minimal-post {
+  width: 1080px;
+  height: 1080px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Center children horizontally */
+}
+
+.template-minimal-post h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.template-minimal-post h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.template-minimal-post h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #3b5998;
+}
+
+.template-minimal-post p {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.template-minimal-post blockquote {
+  font-weight: semi-bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #40f000;
+  border: 0.5px solid #00ff04;
+  border-radius: 8px;
+}
+
+.template-minimal-post ul,
+.template-minimal ol {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.template-minimal-post code {
+  font-family: monospace;
+  background-color: #e7e7e7;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.template-minimal-post pre code {
+  display: block;
+  padding: 10px;
+  overflow-x: auto;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+}
+
+.template-minimal-post hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.template-minimal-post strong {
+  font-weight: bold;
+}
+
+.template-minimal-post em {
+  font-style: italic;
+}

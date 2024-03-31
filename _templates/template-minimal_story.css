@@ -1,0 +1,78 @@
+
+/* Minimal Story template */
+.template-minimal-story {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.template-minimal-story h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.template-minimal-story h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.template-minimal-story h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #3b5998;
+}
+
+.template-minimal-story p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.template-minimal-story blockquote {
+  margin-left: 0;
+  padding: 10px 20px;
+  background-color: #ecf0f1;
+  border-left: 5px solid #34495e;
+  border-radius: 5px;
+}
+
+.template-minimal-story ul,
+.template-minimal ol {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.template-minimal-story code {
+  font-family: monospace;
+  background-color: #e7e7e7;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.template-minimal-story pre code {
+  display: block;
+  padding: 10px;
+  overflow-x: auto;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+}
+
+.template-minimal-story hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.template-minimal-story strong {
+  font-weight: bold;
+}
+
+.template-minimal-story em {
+  font-style: italic;
+}

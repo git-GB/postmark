@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: darkgray;
+  background-image: linear-gradient(135deg, #f5f7fa 25%, transparent 25%), linear-gradient(225deg, #f5f7fa 25%, transparent 25%), linear-gradient(45deg, #f5f7fa 25%, transparent 25%), linear-gradient(315deg, #f5f7fa 25%, #e2e8f0 25%);
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-size: 20px 20px;
+}
+
+.container {
+  max-width: 800px;
+  /* Reduced width for a more compact layout */
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  /* Added a white background for contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Added a subtle shadow */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+  /* Darker text color */
+}
+
+main {
+  display: flex;
+  gap: 20px;
+}
+
+.editor-container,
+.preview-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#markdown-input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#download-button,
+#template-selector {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+#download-button:hover,
+#template-selector:hover {
+  background-color: #f0f0f0;
+}
+
+.preview-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#preview {
+  width: 400px;
+  /* Set the actual width of the preview */
+  height: 500px;
+  /* Set the actual height of the preview */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Hide overflow to prevent scrollbars */
+  zoom: 0.8;
+  /* Scale down the content */
+}
+
+@media (max-width: auto) {
+  #preview {
+    zoom: 0.6;
+    /* Further scale down the content for smaller screens */
+  }
+}
+
+@media (max-width: auto) {
+  #preview {
+    zoom: 0.4;
+    /* Further scale down the content for very small screens */
+  }
+}
+
+/*#preview {
+  max-width: 500px;
+  max-height: 500px;
+  overflow: hidden;
+  /* Ensure content does not exceed the container */
+/*margin: auto;
+  /* Center the preview */
+/* border: 1px solid #ccc;
+  /* Ensure the container wraps around the content */
+/*position: relative;
+  /* Needed for scaling the content */
+/*justify-content: center;
+  /* Center children vertically */
+/*align-items: center;
+}*/
+
+/* Shared base styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul,
+ol,
+li,
+pre,
+code,
+hr,
+strong,
+em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p,
+li {
+  line-height: 1.6;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+code,
+pre {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  border-top: 1px solid #ccc;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  padding-left: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  border-left: 3px solid #ccc;
+}
+
+
+/*Modern and minimal template*/
+.template-modern-minimalistic {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+  text-align: center;
+  width: 1080px;
+  height: 1080px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.template-modern-minimalistic h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.template-modern-minimalistic h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.template-modern-minimalistic p {
+  font-size: 18px;
+}
+
+.template-modern-minimalistic blockquote {
+  font-weight: semi-bold;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #eec;
+  font-style: italic;
+  background-color: #332;
+  border: 0.5px solid #002;
+  border-radius: 8px;
+  zoom: 120%;
+}
+
+.template-modern-minimalistic code {
+  font-family: "Courier New", monospace;
+  background-color: #223;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+.template-modern-minimalistic pre code {
+  display: block;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+/* Elegant and Sophisticated Template */
+.template-elegant-sophisticated {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  background-color: #f9f6f1;
+  padding: 40px;
+  text-align: left;
+}
+
+.template-elegant-sophisticated h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #8b4513;
+}
+
+.template-elegant-sophisticated h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #a0522d;
+}
+
+.template-elegant-sophisticated p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.template-elegant-sophisticated blockquote {
+  font-style: italic;
+  color: #666;
+  border-left: 4px solid #d2b48c;
+  padding-left: 20px;
+  margin: 30px 0;
+}
+
+.template-elegant-sophisticated code {
+  font-family: "Courier New", monospace;
+  background-color: #f5deb3;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.template-elegant-sophisticated pre code {
+  display: block;
+  padding: 10px;
+  background-color: #f5e5d5;
+  border-radius: 5px;
+}
+
+/* Bold and Vibrant Template */
+.template-bold-vibrant {
+  font-family: "Montserrat", sans-serif;
+  color: #0c0c0c;
+  background-color: #ff5722;
+  padding: 40px;
+  text-align: center;
+}
+
+.template-bold-vibrant h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #0c0c0c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  /* Clean and Professional Template */
+  .template-clean-professional {
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .template-clean-professional h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+  }
+
+  .template-clean-professional h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #34495e;
+  }
+
+  .template-clean-professional p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .template-clean-professional blockquote {
+    font-style: italic;
+    color: #7f8c8d;
+    border-left: 4px solid #bdc3c7;
+    padding-left: 20px;
+    margin: 20px 0;
+  }
+
+  .template-clean-professional code {
+    font-family: "Courier New", monospace;
+    background-color: #ecf0f1;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+
+  .template-clean-professional pre code {
+    display: block;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+}
